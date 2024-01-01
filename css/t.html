@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    /* Apply a flex container to the body */
+    body {
+      display: flex;
+      flex-direction: column;
+      align-items: center; /* Center the content horizontally */
+    }
+
+    /* Style for the first row containing text */
+    .text-row {
+      margin-bottom: 20px; /* Adjust as needed */
+    }
+
+    /* Apply a flex container to the second row containing images */
+    .image-row {
+      display: flex;
+      justify-content: space-around; /* Adjust as needed */
+      flex-wrap: wrap; /* Allow images to wrap to the next line if needed */
+    }
+
+    /* Style for individual images */
+    .image {
+      max-width: 100%; /* Make sure images don't exceed their container width */
+      height: auto;
+      margin-bottom: 10px; /* Adjust as needed */
+    }
+  </style>
+</head>
+<body>
+  <!-- First row with text -->
+  <div class="text-row">
+    <p>Your text goes here.</p>
+  </div>
+
+  <!-- Second row with images -->
+  <div class="image-row">
+    <img class="image" src="..images/image1.jpg" alt="Image 1">
+    <img class="image" src="..images/image2.jpg" alt="Image 2">
+    <img class="image" src="image3.jpg" alt="Image 3">
+  </div>
+</body>
+</html>
