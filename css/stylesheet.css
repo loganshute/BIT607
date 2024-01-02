@@ -633,6 +633,6 @@ main {
 }
 header {
 
-  background-image:url("../images/mobile_back.webp");
+  background-image:none;
 }
 }
