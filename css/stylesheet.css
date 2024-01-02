@@ -125,6 +125,7 @@ h3 {
   border:10px #b21d1d dotted;
 }
 .reveiw img {
+  height: auto;
   padding:10px;
 }
 .reveiw h1 {
