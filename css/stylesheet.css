@@ -10,7 +10,6 @@ body {
 header {
   display:flex;
   flex-direction:column;
-  background-image:url("../images/back.webp");
   background-size: cover;
   color:#ffffff;
   text-align:center;
