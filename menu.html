@@ -12,6 +12,18 @@
     <link rel="icon" type="image/x-icon" href="images/favicon.ico">
     <style>
     </style>
+    <script>
+      function loadYouTubeIframe() {
+        var iframe = document.createElement("iframe");
+        iframe.src = "https://www.youtube.com/embed/1OyukOkqRSE?si=UYomnAl0Z6SVKTyA";
+        iframe.title = "YouTube video player";
+        iframe.allow = "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share";
+        iframe.allowfullscreen = true;
+        document.getElementById("youtube-container").appendChild(iframe);
+      }
+    
+      document.addEventListener("DOMContentLoaded", loadYouTubeIframe);
+    </script>
   </head>
   
   <body>
@@ -368,12 +380,8 @@
             </a>
           </h2>
           <br>
+          <div id="youtube-container"></div>
 
-          
-          <iframe src="https://www.youtube.com/embed/1OyukOkqRSE?si=UYomnAl0Z6SVKTyA"
-          title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          allowfullscreen loading="lazy"  >
-          </iframe>
         </div>
         <div id="bread" class="col-xl-4">
           <h1>
