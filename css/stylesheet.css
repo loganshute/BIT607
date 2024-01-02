@@ -23,7 +23,7 @@ header h1 {
   color:#fff;
 }
 #logo {
-  width:250px;
+  width:150px;
   height:auto;
 }
 nav {
@@ -620,7 +620,7 @@ main {
   padding-right:20px;
 }
 .details {
-  font-size:1em;
+  font-size:0.7em;
 }
 .map2 {
   width:300px;
