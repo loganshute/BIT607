@@ -1,0 +1,592 @@
+* {
+  font-family:'Montserrat';
+}
+body {
+  background-color:#222222;
+  color:#fff;
+  text-shadow:0 0 3px #000000,0 0 5px #000000;
+}
+header {
+  display:flex;
+  flex-direction:column;
+  background-image:url("../images/back.webp");
+  background-size: cover;
+  color:#ffffff;
+  text-align:center;
+  align-items:center;
+  justify-content:center;
+  border-style:none none solid none;
+
+}
+header h1 {
+  color:#fff;
+}
+#logo {
+  width:200px;
+  height:auto;
+}
+nav {
+  font-size:1.2em;
+  margin-top:25px;
+}
+.menu-container {
+  display:flex;
+}
+.desktop-menu {
+  display:flex;
+  gap:20px;
+  align-items:center;
+  text-align:center;
+}
+.menu-item {
+  padding:15px;
+  flex-wrap:wrap;
+}
+.name {
+  font-size:4em;
+}
+.details {
+  font-size:24px;
+  padding-bottom:50px;
+}
+.tagline {
+  background-image:url("../images/design.webp");
+  padding:34px;
+  height:128PX;
+}
+main {
+  padding:20px;
+}
+.welcome-section {
+  border:#b21d1d dotted;
+  padding:20px;
+  margin-bottom:20px;
+  border-radius:25px;
+}
+.Restaurant-images {
+  display:grid;
+  float:right;
+  margin-left:20px;
+  border-left:#b21d1d dotted;
+  border-radius:25px;
+  padding:20px;
+  padding-bottom:25px;
+  padding-top:25px;
+}
+.reservation-button {
+  width:100%;
+  display:inline-block;
+  text-decoration:none;
+  color:#fff;
+  background-color:#b21d1d;
+  border-radius:5px;
+  align-content:center;
+  font-size:1em;
+  text-align:center;
+  padding-top:20px;
+  padding-bottom:20px;
+}
+.reservation-button:hover {
+  background-color:#fffefe;
+}
+h1 {
+  color:#e7c737;
+}
+.image-section {
+  margin-top:10px;
+  width:90%;
+  text-align:center;
+  border-radius:5px;
+}
+.image-section img {
+  padding:5px;
+  border-radius:15px;
+}
+.featured-image {
+  width:100%;
+  border-radius:5px;
+  margin-top:10px;
+  text-align:center;
+  height:250px;
+  justify-content:space-between;
+}
+h3 {
+  text-align:center;
+  font-size:100%;
+}
+.reveiw {
+  display:flex;
+  flex-wrap:wrap;
+  border-radius:100px;
+  padding:20px;
+  color:#ffffff;
+  margin-bottom:20px;
+  border:10px #b21d1d dotted;
+}
+.reveiw img {
+  padding:10px;
+}
+.reveiw h1 {
+  padding-top:50px;
+  font-size:24px;
+  margin-bottom:10px;
+}
+.design {
+  background-image:url("../images/design.jpg");
+  height:65px;
+}
+.row {
+  color:#ffffff;
+  border-top:#ffffff;
+  text-align:center;
+  border-style:solid none solid none;
+  background-color:#414040;
+  width:100%;
+  margin:0px;
+  padding:20px;
+}
+.footer {
+  text-align:center;
+  color:#222222;
+  height:100%;
+  background-color:#fff;
+  width:100%;
+  text-shadow:0 0 0px #000000,0 0 0px #000000;
+}
+a:link {
+  color:#ffffff;
+  text-decoration:none;
+}
+a:visited {
+  color:#ffffff;
+}
+a:hover {
+  color:#b21d1d;
+}
+a:active {
+  font-style:italic;
+  color:#000000;
+}
+.mobile-menu {
+  display:none;
+  flex-direction:column;
+  align-items:center;
+  text-align:center;
+  position:fixed;
+  top:0;
+  left:0;
+  width:100%;
+  height:100vh;
+  background-color:rgba(34,34,34,90%);
+  z-index:1;
+  overflow-y:auto;
+}
+.mobile-menu>a:hover {
+  color:#b21d1d;
+}
+.mobile-menu-icon {
+  display:none;
+  font-size:24px;
+  cursor:pointer;
+  color:#fff;
+  padding:10px;
+  position:fixed;
+  z-index:2;
+  top:10px;
+  right:10px;
+  background-color:#222222;
+  border-radius:20px;
+  border:2px solid #ffffff;
+}
+.contact-details {
+  display:flex;
+  flex-wrap:wrap;
+  box-sizing:border-box;
+  justify-content:space-between;
+  color:#ffffff;
+  background-color:#222222;
+  border-radius:25px;
+  padding:20px;
+  margin-bottom:25px;
+  border:#b21d1d dotted;
+}
+.text {
+  text-align:left;
+}
+#map {
+  width:100%;
+  border-radius:25px;
+  border:2px #b21d1d solid;
+  overflow:hidden;
+  padding-bottom:15%;
+  position:relative;
+  height:0;
+}
+#map iframe {
+  left:0;
+  top:0;
+  height:100%;
+  width:100%;
+  position:absolute;
+}
+.owners {
+  color:#ffffff;
+  border-radius:25px;
+  border:solid;
+  border:#b21d1d dotted;
+  padding:20px;
+  align-items:center;
+  align-content:center;
+  overflow:hidden;
+}
+.owners img {
+  width:30%;
+  float:right;
+  border-radius:15px;
+  margin-left:50px;
+  margin-bottom:20px;
+}
+.full-menu {
+  display:flex;
+  flex-wrap:wrap;
+  border:#b21d1d dotted;
+  border-radius:15px;
+  padding:20px;
+}
+#drinks {
+  border-radius:15px;
+  background-color:#231f1f;
+  border:#b21d1d solid;
+  padding:20px;
+  padding-bottom:0px;
+}
+h2 {
+  color:#d78e8e;
+  font-size:20px;
+}
+.menus-font {
+  font-size:20px;
+  color:#fa9696;
+}
+.contact_socials {
+  display:flex;
+  flex-wrap:wrap;
+  color:#ffffff;
+  border-radius:25px;
+  padding:20px;
+  margin-top:25px;
+  border:#b21d1d dotted;
+  align-items:center;
+  text-align:center;
+}
+.per {
+  color:#e7c737;
+  font-size:15px;
+}
+.contact_socials iframe {
+  width:100%;
+  height:600px;
+  background-color:#ffffff;
+  border-radius:25px;
+  border:2px #b21d1d solid;
+}
+.contact_socials img {
+  width:40%;
+}
+.recipes {
+  display:flex;
+  flex-wrap:wrap;
+  margin-top:20px;
+  border:#b21d1d dotted;
+  padding:20px;
+  border-radius:15px;
+}
+#bread {
+  background-color:#353232;
+  border-radius:15px;
+  border:#b21d1d solid;
+  padding:20px;
+}
+.recipes img {
+  float:right;
+  width:40%;
+  align-items:center;
+  justify-content:center;
+  margin-right:30px;
+}
+.recipes iframe {
+  border-radius:15px;
+  width:100%;
+  height:450px;
+}
+.full-menu img {
+  float:right;
+  width:40%;
+  margin-top:60px;
+  margin-right:50px;
+}
+.reg-details {
+  float:right;
+}
+.reg-form {
+  border:#b21d1d dotted;
+  border-radius:25px;
+  padding:20px;
+  display:flex;
+  flex-wrap:wrap;
+}
+.voucher-checker {
+  display:flex;
+  flex-wrap:wrap;
+  margin-top:20px;
+  border:#b21d1d dotted;
+  border-radius:25px;
+  padding:20px;
+}
+.vouchers {
+  float:right;
+}
+table {
+  background-color:rgba(0,0,0,0);
+  border-collapse:separate;
+  width:100%;
+  color:#ffffff;
+  margin-left:auto;
+  margin-right:auto;
+  border-radius:25px;
+  border:none;
+  border-spacing:10px;
+}
+th,td {
+  padding:8px;
+  font-weight: lighter;
+  text-align:center;
+  border-radius:25px;
+  background-color:#20201f;
+  border:1px solid rgb(255,255,255);
+}
+th {
+  background-color:#2d2929;
+}
+.reg-form iframe {
+  width:100%;
+  height:600px;
+  background-color:#ffffff;
+  border-radius:25px;
+  border:2px #b21d1d solid
+}
+.voucher-checker iframe {
+  width:100%; 
+  height:500px;
+  background-color:#ffffff;
+  border-radius:25px;
+  border:#b21d1d solid;
+}
+.available {
+  color:rgb(89,171,89);
+}
+.occupied {
+  color:#b21d1d;
+}
+.about {
+  display:flex;
+}
+#profiles {
+  background-color:#2d2929;
+  border:2px #b21d1d solid;
+  border-radius:25px;
+  padding:20px;
+}
+.about {
+  display:flex;
+  flex-wrap:wrap;
+  border:2px #b21d1d dotted;
+  border-radius:25px;
+  padding:20px;
+}
+.about img {
+  width:100%;
+  border-radius:15px;
+  margin-bottom:20px
+}
+.closed-day {
+  color: #b21d1d;
+  margin-top: 30px;
+  font-size: 0.6em;
+  white-space: nowrap;}
+
+.opening-hours {
+  color: #e7c737;
+  margin-top: 30px;
+  font-size: 0.6em;
+  white-space: nowrap;
+}
+#calendar{
+  width: 100%;
+  z-index:0;
+
+}
+.hours{
+  display: flex;
+  flex-wrap: wrap;
+  border:2px #b21d1d dotted;
+  border-radius: 25px;
+  padding: 20px;
+}
+.fc-view-container {
+  border: none;
+  border-radius: 25px;
+  overflow: hidden;
+  border:2px #b21d1d solid;
+}
+.Learn-more {
+  color:#e7c737;
+  font-size:15px; 
+}
+.Learn-more:hover{
+  color: #b21d1d;
+  font-style: italic;
+}
+
+/* Media queries for responsiveness */
+@media only screen and (max-width:1200px) {
+  main {
+  padding:20px;
+  padding-left:100px;
+  padding-right:100px;
+}
+.welcome-section {
+  display:flex;
+  flex-wrap:wrap-reverse;
+}
+.featured-image {
+  width:100%;
+  height:auto;
+}
+.image-section {
+  width:100%;
+}
+.Restaurant-images {
+  width:100%;
+  margin-left:0px;
+  border-left:#b21d1d none;
+  padding:0px;
+  padding-bottom:0px;
+  padding-top:0px;
+}
+.contact_socials {
+  padding:0px;
+  padding-top:10px;
+  padding-bottom:10px;
+}
+.map {
+  width:100%;
+}
+.owners {
+  display:flex;
+  flex-wrap:wrap-reverse;
+  padding:10px;
+}
+.owners img {
+  width:100%;
+}
+.contact_socials img {
+  width:100%;
+}
+.contact_socials {
+  flex-wrap:wrap-reverse;
+}
+.full-menu img {
+  display:none;
+}
+#drinks {
+  border:none;
+  padding: 0px;
+}
+table {
+  width:100%;
+}
+.about {
+  padding:0px;
+}
+#profiles {
+  border:none;
+}
+.reg-form {
+  padding:0px;
+}
+.voucher-checker {
+  padding:0px;
+}
+.full-menu {
+  padding:0px;
+}
+.recipes {
+  padding:0px
+}
+#bread {
+  border:none;
+  padding: 5px;
+}
+.recipes iframe {
+  height:200px;
+}
+.reservation-button {
+  margin-top: 20px;
+}
+.hours{
+  padding:0px;
+  padding-bottom: 20px;
+}
+.closed-day {
+  font-size: 0.4em;
+}
+.opening-hours {
+  font-size: 0.4em;
+}
+}
+
+@media only screen and (max-width:768px) {
+  .desktop-menu {
+  display:none;
+}
+.mobile-menu-icon {
+  display:inline;
+}
+.mobile-menu.show {
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  text-align:left;
+  position:fixed;
+  top:0%;
+  left:0;
+  width:100%;
+  background-color:rgba(34,34,34,95%);
+  z-index:1;
+  margin-top:0px;
+  padding-top:50px;
+}
+#logo {
+  width:150px;
+  height:auto;
+}
+.name {
+  font-size:2em;
+}
+main {
+  padding:20px;
+  padding-left:20px;
+  padding-right:20px;
+}
+.details {
+  font-size:1em;
+}
+.map2 {
+  width:300px;
+  height:250px;
+}
+#patten {
+  display:none;
+}
+}
