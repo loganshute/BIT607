@@ -23,8 +23,8 @@ header h1 {
   color:#fff;
 }
 #logo {
-  width:180px;
-  height:180px;
+  width:200px;
+  height:auto;
 }
 nav {
   font-size:1.2em;
@@ -104,11 +104,11 @@ h1 {
   border-radius:15px;
 }
 .featured-image {
-  width:400px;  
-  height:250px;
+  width:100%;
   border-radius:5px;
   margin-top:10px;
   text-align:center;
+  height:250px;
   justify-content:space-between;
 }
 h3 {
@@ -125,8 +125,6 @@ h3 {
   border:10px #b21d1d dotted;
 }
 .reveiw img {
-  width: 300px;
-height: 280px;
   padding:10px;
 }
 .reveiw h1 {
@@ -502,6 +500,10 @@ th {
 .welcome-section {
   display:flex;
   flex-wrap:wrap-reverse;
+}
+.featured-image {
+  width:100%;
+  height:auto;
 }
 .image-section {
   width:100%;
