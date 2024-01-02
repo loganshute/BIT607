@@ -9,7 +9,7 @@ body {
 header {
   display:flex;
   flex-direction:column;
-  background-image:url("../images/back.png");
+  background-image:url("../images/back.jpg");
   background-size: cover;
   color:#ffffff;
   text-align:center;
