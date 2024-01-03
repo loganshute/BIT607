@@ -511,6 +511,7 @@ main {
   height:auto;
 }
 header {
+  background-image:url("../images/mobile_back.webp");
 }
 h2 {
   padding-top:10px;
