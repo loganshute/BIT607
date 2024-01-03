@@ -528,20 +528,20 @@ h2 {
   width:100%;
 }
 .image-section img {
-  width:400px;  
+  width:100%; 
+
   padding:0px;
 }
 .Restaurant-images {
   float: none;
-  width:400px;
-  justify-content: center;
-  text-align: center;
+  width: 100%;
   margin-left:0px;
   border-left:#b21d1d none;
   padding:0px;
   padding-bottom:0px;
-  padding-top:0px;
+  padding-top:0px; 
 }
+
 .reservation-button {
   margin-top:20px;
 }
@@ -645,6 +645,14 @@ table {
 @media only screen and (max-width:800px){
 header{
   background-image:url("../images/mobile_back.webp");
+}
+.Restaurant-images img{
+  width: 400px;
+  height: 250px;
+}
+.image-section img{
+  width: 400px;
+  height: 250px;
 }
 }
 
