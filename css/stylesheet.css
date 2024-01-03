@@ -2,7 +2,9 @@
 * {
   font-family:'Montserrat';
 }
-body {
+
+body {    
+  margin: 0;
   background-color:#222222;
   color:#fff;
   text-shadow:0 0 3px #000000,0 0 5px #000000;
@@ -53,7 +55,7 @@ nav {
 .tagline {
   background-image:url("../images/design.webp");
   padding:34px;
-  height:128PX;
+  height:60px;
 }
 main {
   padding:20px;
@@ -95,6 +97,7 @@ main {
 }
 h1 {
   color:#e7c737;
+  font-size: 2rem;
 }
 .image-section {
   margin-top:10px;
@@ -139,6 +142,7 @@ h3 {
 .footer_info {
   display: flex;
   flex-wrap: wrap;
+  box-sizing: border-box;
   justify-content:space-around ;
   color:#ffffff;
   border-top:#ffffff;
@@ -148,6 +152,7 @@ h3 {
   width:100%;
   margin:0px;
   padding:20px;
+
 }
 .footer {
   text-align:center;
@@ -546,7 +551,7 @@ th {
 }
 #drinks {
   border:none;
-  padding: 0px;
+  padding: 10px;
 }
 table {
   width:100%;
