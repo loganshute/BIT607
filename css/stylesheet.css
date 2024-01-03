@@ -74,6 +74,9 @@ main {
   padding-bottom:25px;
   padding-top:25px;
 }
+.image-section img{
+  width: 25%;
+}
 .reservation-button {
   width:100%;
   display:inline-block;
@@ -117,19 +120,15 @@ h3 {
 }
 .reveiw {
   display:flex;
-  flex-wrap:wrap;
   border-radius:100px;
   padding:20px;
   color:#ffffff;
   margin-bottom:20px;
   border:10px #b21d1d dotted;
 }
-.reveiw img {
-  height: auto;
-  padding:10px;
-}
+
 .reveiw h1 {
-  padding-top:50px;
+  padding-top:65px;
   font-size:24px;
   margin-bottom:10px;
 }
@@ -137,7 +136,10 @@ h3 {
   background-image:url("../images/design.webp");
   height:65px;
 }
-.row {
+.footer_info {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:space-around ;
   color:#ffffff;
   border-top:#ffffff;
   text-align:center;
@@ -632,4 +634,13 @@ main {
 header {
   background-image:url("../images/mobile_back.webp");
 }
+.image-section img{
+  width: 100%;
+}
+.reveiw {
+flex-wrap: wrap;
+}
+.reveiw img {
+ width: 100% ;
+  }
 }
