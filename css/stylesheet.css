@@ -176,9 +176,7 @@ a:active {
   padding-bottom:25px;
   padding-top:25px;
 }
-.image-section img {
-  width:25%;
-}
+
 .reservation-button {
   width:100%;
   display:inline-block;
@@ -202,7 +200,8 @@ a:active {
   border-radius:5px;
 }
 .image-section img {
-  padding:5px;
+  padding:5px; 
+  width:25%;
   border-radius:15px;
 }
 .featured-image {
@@ -531,7 +530,12 @@ h2 {
 .image-section {
   width:100%;
 }
+.image-section img {
+  width:100%;  
+  padding:0px;
+}
 .Restaurant-images {
+  float: none;
   width:100%;
   margin-left:0px;
   border-left:#b21d1d none;
@@ -548,9 +552,7 @@ h2 {
 .details {
   font-size:0.7em;
 }
-.image-section img {
-  width:100%;
-}
+
 .reveiw {
   flex-wrap:wrap;
 }
