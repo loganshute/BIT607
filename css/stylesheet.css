@@ -510,9 +510,6 @@ main {
   width:150px;
   height:auto;
 }
-header {
-  background-image:url("../images/mobile_back.webp");
-}
 h2 {
   padding-top:10px;
 }
@@ -641,6 +638,11 @@ table {
 }
 .opening-hours {
   font-size:0.4em;
+}
+}
+@media only screen and (max-width:800px){
+header{
+  background-image:url("../images/mobile_back.webp");
 }
 }
 
