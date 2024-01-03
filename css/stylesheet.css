@@ -528,12 +528,14 @@ h2 {
   width:100%;
 }
 .image-section img {
-  width:100%;  
+  width:400px;  
   padding:0px;
 }
 .Restaurant-images {
   float: none;
-  width:100%;
+  width:400px;
+  justify-content: center;
+  text-align: center;
   margin-left:0px;
   border-left:#b21d1d none;
   padding:0px;
