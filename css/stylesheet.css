@@ -654,6 +654,10 @@ header{
   width: 400px;
   height: 250px;
 }
+.reveiw img{
+  width: 400px;
+  height: 350px;
+}
 }
 
 /* CSS For the google fonts */
