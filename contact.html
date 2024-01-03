@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+  <!-- Meta tags for character set and viewport -->
   
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--CSS stylesheet link -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link href="css/stylesheet.css" rel="stylesheet">
+    <!-- Title and favicon -->
     <title>
       Welcome to Haukai Restaurant
     </title>
@@ -15,11 +18,14 @@
   </head>
   
   <body>
+    <!-- Header section -->
     <header>
+      <!-- Menu container with logo and navigation links -->
       <div class="menu-container">
         <a href="index.html" class="menu-item">
           <img id="logo" src="images/logo.png" alt="logo">
         </a>
+        <!-- Desktop menu navigation links -->
         <nav class="desktop-menu">
           <a href="index.html" class="menu-item">
             Home
@@ -37,6 +43,7 @@
             Hours
           </a>
         </nav>
+        <!-- Mobile menu icon and navigation links -->
         <div class="mobile-menu-icon">
           &#9776;
         </div>
@@ -59,8 +66,8 @@
         </nav>
       </div>
       <div>
+        <!-- Page name -->
         <h1>
-          <br>
           <strong>
             Find & Contact Haukai Restaurant
           </strong>
@@ -69,12 +76,14 @@
         </h1>
       </div>
     </header>
+    <!-- Main content section -->
     <main>
       <div class="contact-details">
         <div class="col-xl-3">
+          <!-- Contact details -->
           <h1>
             <strong>
-                Contact Details:
+              Contact Details:
             </strong>
           </h1>
           <h2>
@@ -96,13 +105,18 @@
             contact@Haukai.co.nz
           </p>
         </div>
+        <!-- Map -->
         <div id="map" class="col-xl-9">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6518.190448829735!2d173.9402416935791!3d-35.22899949999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6d0bb76f05800a6d%3A0x912328fde4819391!2sHaukai%20Restaurant!5e0!3m2!1sen!2snz!4v1703828971384!5m2!1sen!2snz" loading="lazy"></iframe>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6518.190448829735!2d173.9402416935791!3d-35.22899949999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6d0bb76f05800a6d%3A0x912328fde4819391!2sHaukai%20Restaurant!5e0!3m2!1sen!2snz!4v1703828971384!5m2!1sen!2snz"
+          loading="lazy">
+          </iframe>
         </div>
       </div>
+      <!-- About the owners -->
       <div class="owners">
         <div>
-          <img src="images/ownerimg.webp" alt="Featured Image 1">
+          <!-- Owner image -->
+          <img src="images/ownerimg.webp" alt="A photo of the owners of Haukai Restaurant">
         </div>
         <div>
           <h1>
@@ -134,11 +148,13 @@
         </div>
       </div>
       <div class="contact_socials">
+        <!-- Google contact form -->
         <div class="col-xl-6">
-          <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeZpP9vjzvtioJc1RWsNx9k0TAxngRM_dkXIA1_Tf-KYLfxfQ/viewform?embedded=true" loading="lazy"
-          class="feedback">
+          <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeZpP9vjzvtioJc1RWsNx9k0TAxngRM_dkXIA1_Tf-KYLfxfQ/viewform?embedded=true"
+          loading="lazy" class="feedback">
           </iframe>
         </div>
+        <!-- Social media links -->
         <div class="col-xl-6">
           <a href="https://www.twitter.com">
             <img src="images/twitter.webp" alt="Twitter/X Logo/Link">
@@ -155,19 +171,25 @@
         </div>
       </div>
     </main>
+    <!-- Design section (empty) -->
     <div class="design">
       <br>
     </div>
+    <!-- Footer section -->
     <footer>
-      <div class="row">
-        <div class="col-sm-4">
-          <br>
-          <a href="reservation.html" class="reservation-button">
-            Make a Reservation NOW
-          </a>
+      <!-- Address, Opening Hours, and Phone Numbers -->
+      <div class="footer_info">
+        <div>
+          <h2>
+            Address:
+          </h2>
+          <p>
+            1 Island Street Kerikeri
+            <br>
+            Bay of Islands
+          </p>
         </div>
-        <div class="col-sm-4">
-          <br>
+        <div>
           <h2>
             Opening Hours:
           </h2>
@@ -177,8 +199,7 @@
             Wednesday to Sunday: 4:00 PM - 11:00 PM
           </p>
         </div>
-        <div class="col-sm-4">
-          <br>
+        <div>
           <h2>
             Phone Numbers:
           </h2>
@@ -189,10 +210,12 @@
           </p>
         </div>
       </div>
+      <!-- Copyright information -->
       <div class="footer">
         Copywright Haukai Restaurant 2024
       </div>
     </footer>
+    <!-- JavaScript for mobile menu functionality -->
     <script>
       document.addEventListener('DOMContentLoaded',
       function() {

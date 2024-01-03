@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
+  <!-- Meta tags for character set and viewport -->
   
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Include FullCalendar CSS and JS -->
+    <!-- Include FullCalendar and CSS and JS stylesheet links -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.10.2/fullcalendar.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js">
     </script>
@@ -15,6 +16,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
     <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
     <link href="css/stylesheet.css" rel="stylesheet">
+    <!-- Title and favicon -->
     <title>
       Haukai Restaurant
     </title>
@@ -24,11 +26,14 @@
   </head>
   
   <body>
+    <!-- Header section -->
     <header>
+      <!-- Menu container with logo and navigation links -->
       <div class="menu-container">
         <a href="index.html" class="menu-item">
           <img id="logo" src="images/logo.png" alt="logo">
         </a>
+        <!-- Desktop menu navigation links -->
         <nav class="desktop-menu">
           <a href="index.html" class="menu-item">
             Home
@@ -46,6 +51,7 @@
             About
           </a>
         </nav>
+        <!-- Mobile menu icon and navigation links -->
         <div class="mobile-menu-icon">
           &#9776;
         </div>
@@ -67,8 +73,9 @@
           </a>
         </nav>
       </div>
+      <!-- Page name -->
       <h1>
-        <br>
+        <!-- Haukai Restarant opening days and times -->
         <strong>
           Restaurant Hours
         </strong>
@@ -87,59 +94,59 @@
           <p>
             Monday and Tuesday: Closed, Wednesday to Sunday: 4 PM - 11 PM
           </p>
-              <h2>
-                  Important Notice:
-              </h2>
-              <p>
-              We value our customers and want to keep you informed about our restaurant
-              schedule.
-            </p>
-           
-              <h2>
-                  Public Holiday Closure:
-              </h2> 
-            <p>
-              We will be closed on public holidays, including Christmas Day, to allow
-              our staff to celebrate with their families.
-            </p>
-           
-              <h2>
-                  Matariki Celebration:
-              </h2>
-              <p>
-              We are excited to announce that we will be open for a special Matariki
-              celebration! Matariki is a significant event in the Māori calendar, marking
-              the start of the Māori New Year. Join us for a festive and cultural experience.
-              <a href="https://www.newzealand.com/nz/matariki/" target="_blank">
-                <Span class="Learn-more">
-                  Learn more about Matariki.
-                </Span>
-              </a>
-            </p>
-            
-           
-              <h2>
-                  Private Events:
-              </h2>
-              <p>
-              Looking to host a private event? Whether it's a birthday party, corporate
-              gathering, or any special occasion, we offer private event services. You
-              can book our venue for private events on both our open and closed days.
-            </p>
-            <p>
-              We appreciate your understanding and continued support. For more details
-              and reservations, feel free to contact us.
-            </p>
+          <h2>
+            Important Notice:
+          </h2>
+          <p>
+            We value our customers and want to keep you informed about our restaurant
+            schedule.
+          </p>
+          <h2>
+            Public Holiday Closure:
+          </h2>
+          <p>
+            We will be closed on public holidays, including Christmas Day, to allow
+            our staff to celebrate with their families.
+          </p>
+          <h2>
+            Matariki Celebration:
+          </h2>
+          <p>
+            We are excited to announce that we will be open for a special Matariki
+            celebration! Matariki is a significant event in the Māori calendar, marking
+            the start of the Māori New Year. Join us for a festive and cultural experience.
+            <a href="https://www.newzealand.com/nz/matariki/" target="_blank">
+              <Span class="Learn-more">
+                Learn more about Matariki.
+              </Span>
+            </a>
+          </p>
+          <h2>
+            Private Events:
+          </h2>
+          <p>
+            Looking to host a private event? Whether it's a birthday party, corporate
+            gathering, or any special occasion, we offer private event services. You
+            can book our venue for private events on both our open and closed days.
+          </p>
+          <p>
+            We appreciate your understanding and continued support. For more details
+            and reservations, feel free to contact us.
+          </p>
         </div>
+        <!-- Calendar -->
         <div class="col-xl-4" id="calendar">
         </div>
       </div>
     </main>
+    <!-- Design section (empty) -->
     <div class="design">
     </div>
+    <!-- Footer section -->
     <footer>
-      <div class="row">
-        <div class="col-sm-4">
+      <!-- Address, Opening Hours, and Phone Numbers -->
+      <div class="footer_info">
+        <div>
           <h2>
             Address:
           </h2>
@@ -149,7 +156,7 @@
             Bay of Islands
           </p>
         </div>
-        <div class="col-sm-4">
+        <div>
           <h2>
             Opening Hours:
           </h2>
@@ -159,7 +166,7 @@
             Wednesday to Sunday: 4:00 PM - 11:00 PM
           </p>
         </div>
-        <div class="col-sm-4">
+        <div>
           <h2>
             Phone Numbers:
           </h2>
@@ -170,10 +177,13 @@
           </p>
         </div>
       </div>
+      </div>
+      <!-- Copyright information -->
       <div class="footer">
         Copywright Haukai Restaurant 2024
       </div>
     </footer>
+    <!-- JavaScript for mobile menu and calender functionality -->
     <script>
       document.addEventListener('DOMContentLoaded',
       function() {
@@ -194,10 +204,10 @@
           },
           dayRender: function(date, cell) {
             var dayOfWeek = date.day();
-            if (dayOfWeek === 1 || dayOfWeek === 2) { // Monday or Tuesday
+            if (dayOfWeek === 1 || dayOfWeek === 2) {
               cell.html('<div class="closed-day"> CLOSED </div>');
             }
-            
+
             else {
               cell.html('<div class="opening-hours">OPEN</div>');
             }

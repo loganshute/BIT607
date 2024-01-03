@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+  <!-- Meta tags for character set and viewport -->
   
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--CSS stylesheet link -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link href="css/stylesheet.css" rel="stylesheet">
+    <!-- Title and favicon -->
     <title>
       Haukai Restaurant
     </title>
@@ -15,11 +18,14 @@
   </head>
   
   <body>
+    <!-- Header section -->
     <header>
+      <!-- Menu container with logo and navigation links -->
       <div class="menu-container">
         <a href="index.html" class="menu-item">
           <img id="logo" src="images/logo.png" alt="logo">
         </a>
+        <!-- Desktop menu navigation links -->
         <nav class="desktop-menu">
           <a href="index.html" class="menu-item">
             Home
@@ -37,6 +43,7 @@
             Hours
           </a>
         </nav>
+        <!-- Mobile menu icon and navigation links -->
         <div class="mobile-menu-icon">
           &#9776;
         </div>
@@ -59,8 +66,8 @@
         </nav>
       </div>
       <div>
+        <!-- Page name -->
         <h1>
-          <br>
           <strong>
             Make A Reservation
           </strong>
@@ -69,6 +76,7 @@
         </h1>
       </div>
     </header>
+    <!-- Main content section -->
     <main>
       <div class="reg-form">
         <div class="col-xl-6">
@@ -142,6 +150,7 @@
             </li>
           </ul>
         </div>
+        <!-- Google reservation form -->
         <div class="col-xl-6">
           <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeDvOR57zNW5XEYgXrh9gPLUpfZjzvEhCalIGvq_Fx7lRyyYA/viewform?embedded=true">
           </iframe>
@@ -149,6 +158,7 @@
       </div>
       <div class="voucher-checker">
         <div class="col-xl-6">
+          <!-- Restaurant Table Availability checker -->
           <h1>
             <strong>
               Restaurant Table Availability:
@@ -223,28 +233,31 @@
         </div>
         <div class="col-xl-6">
           <br>
-          <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSd7Bcpnw_fwq1J8MaigFsizwHboNZnVsw3kzEZCZ10JNnSd9g/viewform?embedded=true"
-           >
+          <!-- Google voucher form -->
+          <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSd7Bcpnw_fwq1J8MaigFsizwHboNZnVsw3kzEZCZ10JNnSd9g/viewform?embedded=true">
           </iframe>
         </div>
       </div>
     </main>
+    <!-- Design section (empty) -->
     <div class="design">
       <br>
     </div>
+    <!-- Footer section -->
     <footer>
-      <div class="row">
-        <div class="col-sm-4">
+      <!-- Address, Opening Hours, and Phone Numbers -->
+      <div class="footer_info">
+        <div>
           <h2>
             Address:
           </h2>
           <p>
-            76 Marsden Road Level 1
+            1 Island Street Kerikeri
             <br>
-            Paihia New Zealand
+            Bay of Islands
           </p>
         </div>
-        <div class="col-sm-4">
+        <div>
           <h2>
             Opening Hours:
           </h2>
@@ -254,7 +267,7 @@
             Wednesday to Sunday: 4:00 PM - 11:00 PM
           </p>
         </div>
-        <div class="col-sm-4">
+        <div>
           <h2>
             Phone Numbers:
           </h2>
@@ -265,10 +278,13 @@
           </p>
         </div>
       </div>
+      <!-- Copyright information -->
       <div class="footer">
         Copywright Haukai Restaurant 2024
       </div>
     </footer>
+    <!-- JavaScript for Restaurant Table Availability checker and mobile menu
+    functionality -->
     <script>
       document.addEventListener('DOMContentLoaded',
       function() {
@@ -280,9 +296,11 @@
           mobileMenu.classList.toggle('show');
         });
       });
+
       function checkAvailability() {
         // Simulating the availability of 8 tables using random numbers (0 for available, 1 for occupied)
-        const tableStatus = Array.from({ length: 8 }, () => Math.round(Math.random()));
+        const tableStatus = Array.from({length: 8},() => Math.round(Math.random()));
+        
         for (let i = 0; i < tableStatus.length; i++) {
           const tableNumber = i + 1;
           const statusElement = document.getElementById(`table${tableNumber}`);
@@ -302,7 +320,7 @@
       // Initial availability check
       checkAvailability();
 
-      // Set up interval to periodically check availability (every 10 seconds in this example)
+      // Set up interval to periodically check availability
       setInterval(checkAvailability, 50000);
     </script>
   </body>
